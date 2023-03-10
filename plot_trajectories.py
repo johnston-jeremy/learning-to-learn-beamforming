@@ -22,7 +22,7 @@ def plot_trajectories():
         for i in range(4):
             plt.plot(m[i], color=colors[i])
             plt.plot(range(tmax),[slsqp[j][i]]*tmax, color=colors[i], linestyle='--')
-            plt.fill_between(range(tmax), res_sorted[i,15], res_sorted[i,85], alpha=0.3, color=colors[i], label='_nolegend_')
+            plt.fill_between(range(tmax), res_sorted[i,15], res_sorted[i,85], alpha=0.2, color=colors[i], label='_nolegend_')
             legend+=[Line2D([0], [0], color=colors[i], label='SNR = '+str(SNR[i])+' dB', linestyle='none', marker='o')]
 
         plt.grid(linestyle='--')
@@ -32,7 +32,7 @@ def plot_trajectories():
         plt.ylabel('Sum Rate')
         fig.set_size_inches(8,7)
         
-        plt.savefig('./trajectories'+str(N)+'K'+str(K)+'.pdf', format='pdf')
+        plt.savefig('./trajectoriesN'+str(N)+'K'+str(K)+'.pdf', format='pdf')
 
     plt.show()
 
