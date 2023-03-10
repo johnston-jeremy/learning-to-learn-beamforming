@@ -1,3 +1,4 @@
 nets
 results
 __pycache__
+.DS_Store
