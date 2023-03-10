@@ -11,3 +11,7 @@ Class Optimizer is the LSTM neural network.
 Class OptimizeeMISO represents the decision variable to be optimized (i.e., the beamformer matrix).
 
 SumRateObjective is the optimization objective.
+
+Set USE_CUDA=True to use gpu, otherwise use CPU.
+
+Based on https://github.com/chenwydj/learning-to-learn-by-gradient-descent-by-gradient-descent/blob/master/Grad_buffer.ipynb

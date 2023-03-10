@@ -406,7 +406,7 @@ def do_test_sumrate_vs_snr():
     path = 'path/to/network.pth'
     res = test_optimizer((N,K), Ptest=Ptest, optim_it=100, test_data=test_data, objective=SumRateObjective, optimizee_class=OptimizeeMISO, hidden_sz=40, load_net_path=path)
     np.save('./results.npy', res)
-    
+
 if __name__ == '__main__':
     USE_CUDA = False
     if USE_CUDA:
